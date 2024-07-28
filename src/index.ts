@@ -1,6 +1,3 @@
-// @ts-ignore
-import config from "../config.json";
-import { Logger } from "tslog";
-const logger = new Logger();
+import logger from "@/utils/logger";
 
 logger.debug("hello");
