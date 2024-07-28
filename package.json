@@ -4,8 +4,10 @@
   "description": "TypeScript Template",
   "main": "index.js",
   "scripts": {
+    "wintest": "title %npm_config_id% && tsc && tsc-alias && node ./dist/index.js",
     "test": "tsc && tsc-alias && node ./dist/index.js",
-    "build": "tsc && tsc-alias",
+    "build": "tsc",
+    "winstart": "title %npm_config_id% && node ./dist/index.js",
     "start": "node ./dist/index.js"
   },
   "keywords": [
@@ -15,6 +17,9 @@
   "author": "kuwa",
   "license": "MIT",
   "dependencies": {
-    "tslog": "^4.8.1"
+    "tslog": "^4.9.3"
+  },
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.11"
   }
 }
